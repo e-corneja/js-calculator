@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    background: #ecf0f3;
+  }
+  
+  .form-cta {
+    width: 31rem;
+    height: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1,
+                -13px -13px 20px #ffffff;
+    margin: 5rem;
+  }
+  
+  .fields {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  p {
+    text-align: center;
+    color: #999;
+    line-height: 1.3;
+    padding: 1rem;
+    }
+  
+    .btn-cta {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 90px;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 20px;
+    background: #24cfaa ;
+    box-shadow: 3px 3px 8px #b1b1b1,
+                -3px -3px 8px #ffffff;
+    color: #fff;
+    margin: 1rem;
+    transition: 0.5s;
+  }
+  
+  .btn-cta:hover {
+    background: #34ecc4;
+  }
+  
+  .btn-cta:active {
+    background: #1da88a;
+  }
+  
