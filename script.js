@@ -1,19 +1,24 @@
 const buttonElement = document.getElementById('btn-click');
 
 buttonElement.onclick = function() {
-  let x = +prompt('Введите первое число');
-  let y = +prompt('Введите второе число');
-  let z = prompt('Введите знак операции: + - * /');
+  const x = parseFloat(prompt('Введите первое число'));
+  const y = parseFloat(prompt('Введите второе число'));
+  const z = prompt('Введите знак операции: + - * /');
 
-  if (z === '+') {
-      alert(`Результат равен ${x + y}`);
-  } else if (z === '-') {
-    alert(`Результат равен ${x - y}`);
-  } else if (z === '*') {
-    alert(`Результат равен ${x * y}`);
-  } else if (z === '/') {
-    alert(`Результат равен ${x / y}`);
+  if (isNaN(x) || isNaN(y)) {
+    alert(`Неверное значение! Перезагрузите страницу и введите корректные значения!`);
   } else {
-    alert(`Неверный знак операции`);
-  }
+    
+      if (z === '+') {
+        alert(`Результат равен ${x + y}`);
+      } else if (z === '-') {
+        alert(`Результат равен ${x - y}`);
+      } else if (z === '*') {
+        alert(`Результат равен ${x * y}`);
+      } else if (z === '/') {
+        alert(`Результат равен ${x / y}`);
+      } else {
+        alert(`Неверный знак операции`);
+      }
+  }  
 }
